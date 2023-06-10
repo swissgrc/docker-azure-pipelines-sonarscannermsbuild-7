@@ -23,7 +23,7 @@ The following example shows the container used for a deployment step which shows
       steps:
       - task: SonarCloudPrepare@1
         displayName: 'Prepare analysis configuration'
-        target: swissgrc/azure-pipelines-sonarscannermsbuild:latest
+        target: swissgrc/azure-pipelines-sonarscannermsbuild:7-unstable
         inputs:
           SonarCloud: 'SonarCloud'
           organization: 'myOrganization'
@@ -33,10 +33,10 @@ The following example shows the container used for a deployment step which shows
       - bash: |
           dotnet build
         displayName: "Build"
-        target: swissgrc/azure-pipelines-sonarscannermsbuild:latest
+        target: swissgrc/azure-pipelines-sonarscannermsbuild:7-unstable
       - task: SonarCloudAnalyze@1
         displayName: 'Run SonarCloud analysis'
-        target: swissgrc/azure-pipelines-sonarscannermsbuild:latest
+        target: swissgrc/azure-pipelines-sonarscannermsbuild:7-unstable
 ```
 
 ### Tags
