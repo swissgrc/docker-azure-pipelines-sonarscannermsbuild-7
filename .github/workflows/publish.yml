@@ -18,7 +18,6 @@ jobs:
       additional-latest-tag-name: 7
       default-unstable-tag: true
       additional-unstable-tag-name: 7-unstable
-
     secrets:
       gh-token: ${{ secrets.GITHUB_TOKEN }}
       docker-username: ${{ secrets.DOCKER_USERNAME }}
